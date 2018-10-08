@@ -12,7 +12,7 @@ public class Screen2Activity extends AppCompatActivity {
     }
 
     public void display1(View v){
-        Intent i = new Intent(this,MainActivity.class);
-        startActivity(i);
+        Intent c = new Intent(this,MainActivity.class);
+        startActivity(c);
     }
 }

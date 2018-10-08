@@ -15,8 +15,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.d("4itf","onCreate has executed...");
-        Intent i = new Intent(this, MyService.class);
-        startService(i);
+        Intent b = new Intent(this, MyService.class);
+        startService(b);
     }
 
     @Override
@@ -56,12 +56,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void display2(View v){
-        Intent i = new Intent(this,Screen2Activity.class);
-        startActivity(i);
+        Intent a = new Intent(this,Screen2Activity.class);
+        startActivity(a);
     }
 
     public void displayMap(View v){
-        Intent i = null, chooser=null;
+        Intent i = null, chooser = null;
         if (v.getId()==R.id.btnmap){
             i=new Intent(Intent.ACTION_VIEW);
             i.setData(Uri.parse("geo:14.582919,120.979683"));
